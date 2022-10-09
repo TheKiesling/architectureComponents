@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:padding="@dimen/margin_small">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_keepSessionActive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/keepSessionActive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_homeFragment_logout"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_homeFragment_keepSessionActive"
+        app:layout_constraintBottom_toTopOf="@id/button_homeFragment_default"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/defaultText"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_homeFragment_success"
+        app:layout_constraintTop_toBottomOf="@id/button_homeFragment_logout"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/success"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/button_homeFragment_default"
+        app:layout_constraintEnd_toStartOf="@id/button_homeFragment_failure"
+        app:layout_constraintTop_toBottomOf="@id/button_homeFragment_logout"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/failure"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/button_homeFragment_success"
+        app:layout_constraintEnd_toStartOf="@id/button_homeFragment_empty"
+        app:layout_constraintTop_toBottomOf="@id/button_homeFragment_logout"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_homeFragment_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintStart_toEndOf="@id/button_homeFragment_failure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_homeFragment_logout"
+        >
+    </com.google.android.material.button.MaterialButton>
+
+    <ImageView
+        android:id="@+id/image_homeFragment_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/progress_homeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_homeFragment_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_homeFragment_state"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

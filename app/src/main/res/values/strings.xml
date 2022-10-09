@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">architectureComponents</string>
+    <string name="name">José Kiesling</string>
+    <string name="emailInput">Correo</string>
+    <string name="passwordInput">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="defaultEmail">kie21581@uvg.edu.gt</string>
+    <string name="errorLogin">ERROR: Correo y/o contraseña invalido(s)</string>
+    <string name="keepSessionActive">Mantener Sesión Activa</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="defaultText">Default</string>
+    <string name="success">Success</string>
+    <string name="failure">Failure</string>
+    <string name="empty">Empty</string>
+    <string name="defaultAlert">Selecciona una opción</string>
+    <string name="successAlert">¡Operación exitosa!</string>
+    <string name="failureAlert">¡Operación fallida!</string>
+    <string name="emptyAlert">Sin resultados</string>
+</resources>

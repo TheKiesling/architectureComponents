@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_title">42sp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="font_size_title_medium">16sp</dimen>
+    <dimen name="font_size_infoCharacters">12sp</dimen>
+    <dimen name="image_size_large">160dp</dimen>
+    <dimen name="image_size_medium">64dp</dimen>
+    <dimen name="image_size_small">32dp</dimen>
+    <dimen name="margin_large">80dp</dimen>
+    <dimen name="icon_size_normal">24dp</dimen>
+    <dimen name="zero">0dp</dimen>
+</resources>
